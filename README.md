@@ -22,7 +22,11 @@ API_KEY = "YOUR_GROQ_API_KEY"
 from langchain_groq import ChatGroq
 llm = ChatGroq(api_key = API_KEY, model="llama3-70b-8192")
 
+<<<<<<< HEAD
 response = llm.invoke("What is the capital of France?")
+=======
+response = llm.invoke("List Top 5 states in India")
+>>>>>>> a6aae9260f74f49ec70e49e704f3b485280d9342
 
 print(f"content: {response.content}")
 print(f"total_tokens: {response.usage_metadata['total_tokens']}")
